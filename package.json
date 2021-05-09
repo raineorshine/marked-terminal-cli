@@ -1,0 +1,45 @@
+{
+  "name": "marked-terminal-cli",
+  "description": "A better way to read README's in the cli!",
+  "version": "0.0.0",
+  "author": {
+    "name": "Raine Revere",
+    "url": "https://github.com/raineorshine"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=13"
+  },
+  "type": "module",
+  "main": "src",
+  "bin": {
+    "marked-terminal-cli": "./src/cli.js"
+  },
+  "scripts": {
+    "lint": "eslint src --cache",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "eslintConfig": {
+    "extends": [
+      "raine"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "eslint-config-raine": "^0.1.2",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.9",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "husky": "^5.0.8",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "marked": "^2.0.3",
+    "marked-terminal": "^4.1.1"
+  }
+}
