@@ -17,8 +17,7 @@
   },
   "scripts": {
     "lint": "eslint src --cache",
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest"
   },
   "eslintConfig": {
     "extends": [
@@ -35,6 +34,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.1.0",
+    "execa": "^4.1.0",
     "husky": "^5.0.8",
     "jest": "^26.6.3"
   },
