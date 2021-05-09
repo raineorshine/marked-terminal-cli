@@ -22,3 +22,14 @@ You may need to force color when piping to less:
 ```sh
 FORCE_COLOR=1 marked-terminal-cli README.md | less -r
 ```
+
+Add handy aliases to your ~/.bashrc:
+
+```sh
+alias md=marked-terminal-cli
+
+# read markdown file with marked-terminal-cli and pass to less
+lessmd() {
+  FORCE_COLOR=1 marked-terminal-cli "$@" | less -r
+}
+```
