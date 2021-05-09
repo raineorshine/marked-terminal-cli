@@ -1,7 +1,7 @@
 {
   "name": "marked-terminal-cli",
   "description": "A better way to read README's in the cli!",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": {
     "name": "Raine Revere",
     "url": "https://github.com/raineorshine"
